@@ -1,0 +1,7 @@
+{
+    "require": {
+        "laravel/installer": "^3.2",
+        "laravel/valet": "^2.11",
+        "laravel/vapor-cli": "^1.9"
+    }
+}
