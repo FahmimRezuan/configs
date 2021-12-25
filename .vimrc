@@ -6,4 +6,8 @@ set ai
 set number
 set hlsearch
 set ruler
+highlight
+
 highlight Comment ctermfg=green
+
+set backspace=indent,eol,start
