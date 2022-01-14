@@ -8,7 +8,7 @@ export ZSH="/Users/fahmimrezuan/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="fishbone++"
+ZSH_THEME="mimos"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -82,11 +82,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='nvim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -110,6 +110,8 @@ alias k="kubectl"
 alias vip-install='venv/bin/pip install -r'
 alias ansible-cli="docker run --rm -it -v $(pwd)/ansible:/ansible ansible /bin/sh"
 alias ansible-cmd="docker run --rm -it -v $(pwd)/ansible:/ansible ansible"
+alias gitlab-runner="cd ~/Downloads && ssh -i "***REMOVED***.pem" ***REMOVED***"
+alias ts="tmux source ~/.tmux.conf"
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 export PATH
 
@@ -142,3 +144,4 @@ export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
+export PATH="$PATH:/Users/fahmimrezuan/.cargo/bin"
