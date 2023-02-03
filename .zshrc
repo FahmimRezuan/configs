@@ -110,7 +110,7 @@ alias k="kubectl"
 alias vip-install='venv/bin/pip install -r'
 alias ansible-cli="docker run --rm -it -v $(pwd)/ansible:/ansible ansible /bin/sh"
 alias ansible-cmd="docker run --rm -it -v $(pwd)/ansible:/ansible ansible"
-alias gitlab-runner="cd ~/Downloads && ssh -i "***REMOVED***.pem" ***REMOVED***"
+alias gitlab-runner="cd ~/Downloads && ssh -i "mykey.pem" <Instance IP"
 alias ts="tmux source ~/.tmux.conf"
 PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 export PATH
@@ -140,8 +140,5 @@ unset __conda_setup
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
-export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
-export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
 export PATH="$PATH:/Users/fahmimrezuan/.cargo/bin"
