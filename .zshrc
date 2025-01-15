@@ -55,7 +55,7 @@ alias rdb='rust-lldb'
 alias argopf="kubectl port-forward svc/argocd-server -n argocd 8080:443"
 alias argorun="while true; do argopf; done"
 alias qemu64="qemu-system-x86_64"
-alias telelog="tsh login --proxy=aspirasi.firesell.io:443 --auth=local --user=fahmim"
+alias telelog="tsh login --proxy=***REMOVED***:443 --auth=local --user=fahmim"
 alias nerdctl="lima nerdctl"
 alias rud='rustup doc'
 alias rus='rustup show'
